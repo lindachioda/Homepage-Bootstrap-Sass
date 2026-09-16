@@ -1,0 +1,336 @@
+.btn {
+  background-color: rgb(66, 40, 111) !important;
+  color: white !important;
+  width: 156px;
+  height: 64px;
+  margin-top: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5em !important;
+  border: 2px solid #42286f !important;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: rgba(81, 46, 90, 0.77) !important;
+  color: black !important;
+  width: 156px;
+  height: 64px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5em !important;
+}
+
+@media (max-width: 992px) {
+  .img-logo {
+    max-width: 250px !important;
+  }
+  .container-fluid {
+    margin: 0 30px !important;
+  }
+  .container-cards {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 280px !important;
+  }
+  .carousel-item {
+    height: 380px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 15px;
+  }
+  .navbar-nav {
+    padding-top: 15px;
+  }
+  .nav-link {
+    margin-left: 0;
+  }
+  .section-first {
+    min-height: 500px;
+    padding: 40px 15px;
+  }
+  .alert {
+    width: 100%;
+    padding: 22px;
+  }
+  .container-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .section-cards {
+    padding: 40px 20px;
+  }
+  .card {
+    width: min(18rem, 90%) !important;
+  }
+  .carousel {
+    width: 90%;
+    padding: 8px;
+    margin-top: 50px !important;
+  }
+  .carousel-item {
+    height: 240px;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+  }
+}
+@media (max-width: 473px) {
+  .alert h4 {
+    text-align: center;
+  }
+  .img-logo {
+    max-width: 200px !important;
+  }
+}
+body {
+  margin: 0;
+  background-color: #f8f3ee;
+  color: #B57EDC;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar {
+  background: linear-gradient(89deg, #ddcdf6, #9B72B0, #6F4A8E);
+  padding: 15px 25px;
+  box-shadow: 0 4px 12px rgba(66, 40, 111, 0.25);
+}
+
+.navbar-nav {
+  font-size: 1.3em;
+}
+
+.navbar-brand, .nav-link {
+  font-family: "Times New Roman", Times, serif;
+  color: #42286f !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  margin-left: 15px;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #e6c8df !important;
+  transform: translateY(-2px);
+}
+
+.nav-link i {
+  margin-right: 6px;
+  color: white;
+}
+
+.img-logo {
+  max-width: 200px;
+}
+
+.section-first {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-image: url("../Crochet .jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.section-first::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(248, 243, 238, 0.35);
+}
+
+/* contenuto sopra la trasparenza */
+.section-first > * {
+  position: relative;
+  z-index: 1;
+}
+
+#chisiamo img {
+  max-width: 100px;
+}
+
+.alert {
+  width: min(834px, 90%);
+  margin: 0;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  border: 2px solid #42286f !important;
+  border-radius: 18px;
+  color: #B57EDC;
+  box-shadow: 0 10px 30px rgba(66, 40, 111, 0.2);
+}
+
+.alert-p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.alertp {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3em;
+}
+
+.alert h4 {
+  font-size: 2.2em;
+}
+
+.section-cards {
+  background: linear-gradient(89deg, #ddcdf6, #9B72B0, #6F4A8E);
+  min-height: 300px;
+  padding: 45px 20px;
+}
+
+#dovetrovarci {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.card {
+  width: 18rem;
+  margin: 0 !important;
+  border: 2px solid #42286f !important;
+  border-radius: 20px !important;
+  background-color: #fffaf5;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #42286f;
+}
+
+.card h6 {
+  color: #8c719b !important;
+}
+
+.card-text {
+  color: #4d4055;
+}
+
+.card i {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.8rem;
+  color: #42286f;
+  transition: 0.3s;
+}
+
+.card:hover i {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+#catalogo {
+  font-family: "Times New Roman", Times, serif;
+  color: #B57EDC;
+  font-weight: 700;
+  font-size: 2.2em;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.carousel {
+  width: min(750px, 90%);
+  margin-top: 50px !important;
+  margin-bottom: 70px;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #fffaf5;
+  padding: 12px;
+  box-shadow: 0 10px 25px rgba(66, 40, 111, 0.2), 0 0 0 2px #42286f;
+}
+
+.carousel-inner {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  height: 420px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-indicators {
+  bottom: 20px;
+  margin-bottom: 0;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: none;
+  opacity: 0.7;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 55px;
+  height: 55px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 25px;
+  border-radius: 50%;
+  background-color: rgba(66, 40, 111, 0.85);
+  opacity: 1;
+  transition: 0.3s;
+}
+
+footer {
+  background: linear-gradient(89deg, #ddcdf6, #9B72B0, #6F4A8E);
+  min-height: 56px;
+  margin-top: 0;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  text-align: center;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=stylePROGETTO5.css.map */

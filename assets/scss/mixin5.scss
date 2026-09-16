@@ -1,0 +1,19 @@
+
+@mixin lavanda-bg {
+    background: linear-gradient(89deg, #ddcdf6, #9B72B0, #6F4A8E);
+}
+
+@mixin lavanda-c {
+    color:#B57EDC;
+}
+
+@mixin font {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@mixin imgs-carousel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

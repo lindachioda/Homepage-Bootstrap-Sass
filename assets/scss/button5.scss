@@ -1,0 +1,33 @@
+
+//FUNZIONE DEL BUTTON: va scritta prima dei comandi di button
+@function button-text-color($bg) {
+  @if $bg == $primary {
+    @return black;
+  } @else if $bg == $secondary {
+    @return white;
+  }
+}
+
+.btn {
+    background-color: $secondary !important;
+    color: button-text-color($secondary) !important;
+    width: 156px;
+    height: 64px;
+    margin-top: 30px;
+    @include font;
+    font-size: 1.5em !important;
+    border: 2px solid #42286f !important;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: $primary !important;
+    color: button-text-color($primary) !important;
+    width: 156px;
+    height: 64px;
+    @include font;
+    font-size: 1.5em !important;
+
+}
+
+
